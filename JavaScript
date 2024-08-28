@@ -1,0 +1,28 @@
+function startSorting() {
+    const houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
+    const house = houses[Math.floor(Math.random() * houses.length)];
+    document.getElementById("house-result").innerText = `You belong to ${house}`;
+    applyHouseTheme(house);
+}
+
+function applyHouseTheme(house) {
+    const colors = {
+        "Gryffindor": ["#7F0909", "#FFC500"],
+        "Slytherin": ["#1A472A", "#AAAAAA"],
+        "Ravenclaw": ["#0E1A40", "#946B2D"],
+        "Hufflepuff": ["#EEE117", "#000000"]
+    };
+    document.body.style.backgroundColor = colors[house][0];
+    document.body.style.color = colors[house][1];
+}
+
+function castSpell() {
+    const spells = {
+        "Expelliarmus": "Disarm your opponent",
+        "Lumos": "Light up your wand",
+        "Alohomora": "Unlock doors",
+        "Expecto Patronum": "Summon a Patronus"
+    };
+    const spellInput = document.getElementById("spell-input").value.trim();
+    const result = spells[spellInput] ? spells[spellInput] : "Unknown spell!";
+    document.getElementById("spell-result").innerText = result;
