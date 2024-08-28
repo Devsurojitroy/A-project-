@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hogwarts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="hogwarts-header">
+        <div class="logo">
+            <img src="images/hogwarts-logo.png" alt="Hogwarts Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sorting">Get Sorted</a></li>
+                <li><a href="#houses">Houses</a></li>
+                <li><a href="#spells">Spells</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#shop">Diagon Alley</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h1>Welcome to Hogwarts School of Witchcraft and Wizardry</h1>
+            <p>Your journey to becoming a great wizard or witch begins here.</p>
+            <div class="image-slider">
+                <!-- Images of Hogwarts -->
+            </div>
+        </section>
+
+        <section id="sorting">
+            <h2>House Sorting Ceremony</h2>
+            <button onclick="startSorting()">Get Sorted</button>
+            <div id="house-result"></div>
+        </section>
+
+        <section id="houses">
+            <h2>Hogwarts Houses</h2>
+            <div class="houses-grid">
+                <!-- Links to each house page -->
+            </div>
+        </section>
+
+        <section id="spells">
+            <h2>Learn and Cast Spells</h2>
+            <input type="text" id="spell-input" placeholder="Type a spell">
+            <button onclick="castSpell()">Cast Spell</button>
+            <div id="spell-result"></div>
+        </section>
+
+        <section id="gallery">
+            <h2>Magical Creatures Gallery</h2>
+            <div class="creature-gallery">
+                <!-- Images of magical creatures -->
+            </div>
+        </section>
+
+        <section id="shop">
+            <h2>Diagon Alley</h2>
+            <p>Visit the magical shops and buy your wizarding supplies.</p>
+            <div class="shop-items">
+                <!-- Items for sale -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hogwarts School of Witchcraft and Wizardry. All rights reserved.</p>
+        <p>"It is our choices that show what we truly are, far more than our abilities." - Albus Dumbledore</p>
+    </footer>
+    <audio id="hp-theme" autoplay loop>
+        <source src="audio/harry_potter_theme.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
