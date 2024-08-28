@@ -1,0 +1,65 @@
+body {
+    font-family: 'Garamond', serif;
+    background-color: #282828;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header.hogwarts-header {
+    background: url('images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+#house-result {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.houses-grid {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.creature-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px 0;
